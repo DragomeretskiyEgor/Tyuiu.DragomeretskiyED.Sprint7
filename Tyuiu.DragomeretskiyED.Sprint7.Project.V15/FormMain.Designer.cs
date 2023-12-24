@@ -29,6 +29,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonHelp_DED = new System.Windows.Forms.Button();
@@ -63,6 +64,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.textBoxAddNamee_DED = new System.Windows.Forms.TextBox();
             this.openFileDialog_DED = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogExcel_DED = new System.Windows.Forms.SaveFileDialog();
+            this.toolTip_DED = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOut_DED)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -95,6 +97,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.buttonHelp_DED.Name = "buttonHelp_DED";
             this.buttonHelp_DED.Size = new System.Drawing.Size(75, 48);
             this.buttonHelp_DED.TabIndex = 2;
+            this.toolTip_DED.SetToolTip(this.buttonHelp_DED, "Справка");
             this.buttonHelp_DED.UseVisualStyleBackColor = true;
             this.buttonHelp_DED.Click += new System.EventHandler(this.buttonHelp_DED_Click);
             // 
@@ -105,6 +108,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.buttonSaveFile_DED.Name = "buttonSaveFile_DED";
             this.buttonSaveFile_DED.Size = new System.Drawing.Size(75, 48);
             this.buttonSaveFile_DED.TabIndex = 1;
+            this.toolTip_DED.SetToolTip(this.buttonSaveFile_DED, "Сохранить таблицу в выбранном месте");
             this.buttonSaveFile_DED.UseVisualStyleBackColor = true;
             this.buttonSaveFile_DED.Click += new System.EventHandler(this.buttonSaveFile_DED_Click);
             // 
@@ -115,6 +119,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.buttonOpenFile_DED.Name = "buttonOpenFile_DED";
             this.buttonOpenFile_DED.Size = new System.Drawing.Size(76, 48);
             this.buttonOpenFile_DED.TabIndex = 0;
+            this.toolTip_DED.SetToolTip(this.buttonOpenFile_DED, "Выберите файл");
             this.buttonOpenFile_DED.UseVisualStyleBackColor = true;
             this.buttonOpenFile_DED.Click += new System.EventHandler(this.buttonOpenFile_DED_Click);
             // 
@@ -213,6 +218,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.buttonSort_DED.Name = "buttonSort_DED";
             this.buttonSort_DED.Size = new System.Drawing.Size(75, 46);
             this.buttonSort_DED.TabIndex = 1;
+            this.toolTip_DED.SetToolTip(this.buttonSort_DED, "Выполнить сортировку");
             this.buttonSort_DED.UseVisualStyleBackColor = true;
             this.buttonSort_DED.Click += new System.EventHandler(this.buttonSort_DED_Click);
             // 
@@ -223,6 +229,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.textBoxSort_DED.Name = "textBoxSort_DED";
             this.textBoxSort_DED.Size = new System.Drawing.Size(301, 20);
             this.textBoxSort_DED.TabIndex = 0;
+            this.toolTip_DED.SetToolTip(this.textBoxSort_DED, "Введите столбец, по которому будет производиться сортировка");
             // 
             // buttonDelete_DED
             // 
@@ -274,6 +281,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.textBoxAddSrok_DED.Name = "textBoxAddSrok_DED";
             this.textBoxAddSrok_DED.Size = new System.Drawing.Size(382, 20);
             this.textBoxAddSrok_DED.TabIndex = 0;
+            this.toolTip_DED.SetToolTip(this.textBoxAddSrok_DED, "Введите срок");
             // 
             // groupBox8
             // 
@@ -292,6 +300,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.textBoxAddOklad_DED.Name = "textBoxAddOklad_DED";
             this.textBoxAddOklad_DED.Size = new System.Drawing.Size(382, 20);
             this.textBoxAddOklad_DED.TabIndex = 0;
+            this.toolTip_DED.SetToolTip(this.textBoxAddOklad_DED, "Введите оклад");
             // 
             // groupBox7
             // 
@@ -310,6 +319,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.textBoxAddStatus_DED.Name = "textBoxAddStatus_DED";
             this.textBoxAddStatus_DED.Size = new System.Drawing.Size(382, 20);
             this.textBoxAddStatus_DED.TabIndex = 0;
+            this.toolTip_DED.SetToolTip(this.textBoxAddStatus_DED, "Введите должность");
             // 
             // groupBox6
             // 
@@ -328,6 +338,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.textBoxAddPhone_DED.Name = "textBoxAddPhone_DED";
             this.textBoxAddPhone_DED.Size = new System.Drawing.Size(382, 20);
             this.textBoxAddPhone_DED.TabIndex = 0;
+            this.toolTip_DED.SetToolTip(this.textBoxAddPhone_DED, "Введите телефон");
             // 
             // groupBox5
             // 
@@ -346,6 +357,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.textBoxAddAddress_DED.Name = "textBoxAddAddress_DED";
             this.textBoxAddAddress_DED.Size = new System.Drawing.Size(382, 20);
             this.textBoxAddAddress_DED.TabIndex = 3;
+            this.toolTip_DED.SetToolTip(this.textBoxAddAddress_DED, "Введите адрес");
             // 
             // groupBox4
             // 
@@ -364,10 +376,16 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.textBoxAddNamee_DED.Name = "textBoxAddNamee_DED";
             this.textBoxAddNamee_DED.Size = new System.Drawing.Size(382, 20);
             this.textBoxAddNamee_DED.TabIndex = 0;
+            this.toolTip_DED.SetToolTip(this.textBoxAddNamee_DED, "Введите имя");
             // 
             // openFileDialog_DED
             // 
             this.openFileDialog_DED.FileName = "openFileDialog1";
+            // 
+            // toolTip_DED
+            // 
+            this.toolTip_DED.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip_DED.ToolTipTitle = "Подсказка";
             // 
             // FormMain
             // 
@@ -439,6 +457,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Button buttonSort_DED;
         private System.Windows.Forms.TextBox textBoxSort_DED;
+        private System.Windows.Forms.ToolTip toolTip_DED;
     }
 }
 
