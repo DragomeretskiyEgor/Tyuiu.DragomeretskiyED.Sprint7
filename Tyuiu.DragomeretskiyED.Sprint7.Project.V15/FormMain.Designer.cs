@@ -43,6 +43,10 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.Srok = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.buttonSort_DED = new System.Windows.Forms.Button();
+            this.textBoxSort_DED = new System.Windows.Forms.TextBox();
+            this.buttonDelete_DED = new System.Windows.Forms.Button();
             this.buttonChange_DED = new System.Windows.Forms.Button();
             this.buttonAdd_DED = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
@@ -59,21 +63,17 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.textBoxAddNamee_DED = new System.Windows.Forms.TextBox();
             this.openFileDialog_DED = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogExcel_DED = new System.Windows.Forms.SaveFileDialog();
-            this.buttonDelete_DED = new System.Windows.Forms.Button();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.textBoxSort_DED = new System.Windows.Forms.TextBox();
-            this.buttonSort_DED = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOut_DED)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -120,6 +120,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             // 
             // dataGridViewOut_DED
             // 
+            this.dataGridViewOut_DED.AllowUserToAddRows = false;
             this.dataGridViewOut_DED.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewOut_DED.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewOut_DED.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -193,6 +194,46 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ввод данных:";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.buttonSort_DED);
+            this.groupBox10.Controls.Add(this.textBoxSort_DED);
+            this.groupBox10.Location = new System.Drawing.Point(6, 355);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(394, 62);
+            this.groupBox10.TabIndex = 14;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Сортировка";
+            // 
+            // buttonSort_DED
+            // 
+            this.buttonSort_DED.Image = ((System.Drawing.Image)(resources.GetObject("buttonSort_DED.Image")));
+            this.buttonSort_DED.Location = new System.Drawing.Point(313, 10);
+            this.buttonSort_DED.Name = "buttonSort_DED";
+            this.buttonSort_DED.Size = new System.Drawing.Size(75, 46);
+            this.buttonSort_DED.TabIndex = 1;
+            this.buttonSort_DED.UseVisualStyleBackColor = true;
+            this.buttonSort_DED.Click += new System.EventHandler(this.buttonSort_DED_Click);
+            // 
+            // textBoxSort_DED
+            // 
+            this.textBoxSort_DED.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxSort_DED.Location = new System.Drawing.Point(6, 25);
+            this.textBoxSort_DED.Name = "textBoxSort_DED";
+            this.textBoxSort_DED.Size = new System.Drawing.Size(301, 20);
+            this.textBoxSort_DED.TabIndex = 0;
+            // 
+            // buttonDelete_DED
+            // 
+            this.buttonDelete_DED.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonDelete_DED.Location = new System.Drawing.Point(309, 423);
+            this.buttonDelete_DED.Name = "buttonDelete_DED";
+            this.buttonDelete_DED.Size = new System.Drawing.Size(91, 65);
+            this.buttonDelete_DED.TabIndex = 12;
+            this.buttonDelete_DED.Text = "Удалить";
+            this.buttonDelete_DED.UseVisualStyleBackColor = false;
+            this.buttonDelete_DED.Click += new System.EventHandler(this.buttonDelete_DED_Click);
             // 
             // buttonChange_DED
             // 
@@ -328,46 +369,6 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             // 
             this.openFileDialog_DED.FileName = "openFileDialog1";
             // 
-            // buttonDelete_DED
-            // 
-            this.buttonDelete_DED.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonDelete_DED.Location = new System.Drawing.Point(309, 423);
-            this.buttonDelete_DED.Name = "buttonDelete_DED";
-            this.buttonDelete_DED.Size = new System.Drawing.Size(91, 65);
-            this.buttonDelete_DED.TabIndex = 12;
-            this.buttonDelete_DED.Text = "Удалить";
-            this.buttonDelete_DED.UseVisualStyleBackColor = false;
-            this.buttonDelete_DED.Click += new System.EventHandler(this.buttonDelete_DED_Click);
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.buttonSort_DED);
-            this.groupBox10.Controls.Add(this.textBoxSort_DED);
-            this.groupBox10.Location = new System.Drawing.Point(6, 355);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(394, 62);
-            this.groupBox10.TabIndex = 14;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Сортировка";
-            // 
-            // textBoxSort_DED
-            // 
-            this.textBoxSort_DED.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.textBoxSort_DED.Location = new System.Drawing.Point(6, 25);
-            this.textBoxSort_DED.Name = "textBoxSort_DED";
-            this.textBoxSort_DED.Size = new System.Drawing.Size(301, 20);
-            this.textBoxSort_DED.TabIndex = 0;
-            // 
-            // buttonSort_DED
-            // 
-            this.buttonSort_DED.Image = ((System.Drawing.Image)(resources.GetObject("buttonSort_DED.Image")));
-            this.buttonSort_DED.Location = new System.Drawing.Point(313, 10);
-            this.buttonSort_DED.Name = "buttonSort_DED";
-            this.buttonSort_DED.Size = new System.Drawing.Size(75, 46);
-            this.buttonSort_DED.TabIndex = 1;
-            this.buttonSort_DED.UseVisualStyleBackColor = true;
-            this.buttonSort_DED.Click += new System.EventHandler(this.buttonSort_DED_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,6 +386,8 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOut_DED)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox8.ResumeLayout(false);
@@ -397,8 +400,6 @@ namespace Tyuiu.DragomeretskiyED.Sprint7.Project.V15
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
 
         }
